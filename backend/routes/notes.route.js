@@ -11,7 +11,7 @@ notesRouter.get("/", async (req, res) => {
     const notes = await NoteModel.find()
     res.send(notes)
 })
-
+//
 notesRouter.post("/create", async (req, res) => {
     const payload = req.body
     
